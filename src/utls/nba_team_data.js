@@ -425,7 +425,7 @@ const data = [
         "nickname": "Heat",
         "code": "MIA",
         "city": "Miami",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png",
+        "logo": 'https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/1920px-Miami_Heat_logo.svg.png',
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -453,7 +453,7 @@ const data = [
         "nickname": "Bucks",
         "code": "MIL",
         "city": "Milwaukee",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Bucks2015.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1920px-Milwaukee_Bucks_logo.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -565,7 +565,7 @@ const data = [
         "nickname": "Thunder",
         "code": "OKC",
         "city": "Oklahoma City",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Thunder_d%27Oklahoma_City_logo.svg/1200px-Thunder_d%27Oklahoma_City_logo.svg.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/2560px-Oklahoma_City_Thunder.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -621,7 +621,7 @@ const data = [
         "nickname": "76ers",
         "code": "PHI",
         "city": "Philadelphia",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1920px-Philadelphia_76ers_logo.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -752,22 +752,6 @@ const data = [
             "sacramento": {
                 "conference": "West",
                 "division": "Southwest"
-            }
-        }
-    },
-    {
-        "id": 37,
-        "name": "Home Team Stephen A",
-        "nickname": "Team Stephen A",
-        "code": "SAS",
-        "city": "Home",
-        "logo": null,
-        "allStar": true,
-        "nbaFranchise": true,
-        "leagues": {
-            "standard": {
-                "conference": "East",
-                "division": "East"
             }
         }
     },
