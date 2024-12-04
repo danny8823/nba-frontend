@@ -1,20 +1,12 @@
 import React from 'react'
-import { useParams,useLocation } from 'react-router-dom'
-import { get_team_data } from '../../services/nbaServices'
-
+import { useParams } from 'react-router-dom'
+import teams from '../../utls/team_data'
 export const Team = () => {
     const {id} = useParams()
-    const location = useLocation()
-    const {team} = location.state || {}
 
-    get_team_data(id)
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => {
-            console.log(error.message)
-        })
-        
+    console.log(teams[0])
+
+    const find_team
     return (
         <div>Team</div>
     )

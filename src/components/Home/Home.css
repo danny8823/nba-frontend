@@ -1,6 +1,7 @@
 .nba-card-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .nba-card {
     width: 200px;
