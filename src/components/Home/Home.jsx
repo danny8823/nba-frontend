@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <NavBar/>
       <div>
-        <h1>NBA TEAMS</h1>
+        <h1 className='nba_title'>NBA TEAMS</h1>
         <div className = 'nba-card-container'>
           {data.map((team) => (
             <div key = {team.id} className='nba-card'>
