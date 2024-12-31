@@ -13,10 +13,10 @@ const Home = () => {
         <div className = 'nba-card-container'>
           {data.map((team) => (
             <div key = {team.id} className='nba-card'>
-            <h4><Link to = {`/team/${team.id}`}state={{team: team}}>{team.name} </Link></h4>
+            <h4 className = 'team_name'><Link to = {`/team/${team.id}`}state={{team: team}}>{team.name} </Link></h4>
               <img src = {team.logo} alt = 'team logo'/>
-              <p>Conference - {team.leagues?.standard?.conference}</p>
-              <p>Division - {team.leagues?.standard?.division}</p>
+              <p className = 'conference'><strong>Conference</strong> - {team.leagues?.standard?.conference}</p>
+              <p className='division'><strong>Division</strong> - {team.leagues?.standard?.division}</p>
             </div>
           ))}
         </div>

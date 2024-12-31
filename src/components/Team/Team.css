@@ -5,10 +5,12 @@
 }
 .team-container > h1 {
     margin: 0;
+    text-align: center;
 }
 
 .player-title {
     margin: 0;
+    text-align: center;
 }
 .players-container {
     background-color: aliceblue;
@@ -21,7 +23,8 @@
 .player-card {
     width: 250px;
     height: 200px;
-    border: 1px solid black;
+    border: 0.5px solid black;
+    border-radius: 20px;
     padding: 5px;
     margin: 5px;
 }
