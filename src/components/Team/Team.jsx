@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useParams,useLocation, Link } from 'react-router-dom'
 import teams from '../../utls/team_data'
 import './Team.css'
+import NavBar from '../Navbar/NavBar'
 
 export const Team = () => {
     const [players, setPlayers] = useState([])
@@ -39,16 +40,29 @@ export const Team = () => {
     get_players()
 
     }, [id])
-       
+       console.log(team)
     return (
         <div>
-            <div className = 'team-container'>
-                <h1>{team?.name}</h1>
-                <p>Total games played:{data?.games}</p>
-                <p>Total assists: {data?.assists}</p>
-                <p>Total blocks: {data?.blocks}</p>
-                <p>Total points: {data?.points}</p>
+            <NavBar/>
+            <div className = 'team-info-container'>
+                <h1 className = 'team-name'>{team?.name}</h1>
+                <img className = 'team-logo' src = {team?.logo} alt = 'team logo'/>    
             </div>
+            
+            <table className = 'team-container'>
+                <tr className = 'row-headers'>
+                    <td>Total games played</td>
+                    <td>Total assists</td>
+                    <td>Total blocks</td>
+                    <td>Total points</td>
+                </tr>
+                <tr>
+                    <td>{data?.games}</td>
+                    <td>{data?.assists}</td>
+                    <td>{data?.blocks}</td>
+                    <td>{data?.points}</td>
+                </tr>
+            </table>
             <h1 className= 'player-title'>Players</h1>
             <div className = 'players-container'>{players.map((player) => (
                     <div key = {player.id} className = 'player-card'>

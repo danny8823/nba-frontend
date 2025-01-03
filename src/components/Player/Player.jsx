@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './Players.css'
+import NavBar from '../Navbar/NavBar'
 
 const Player = () => {
     const [stats, setStats] = useState()
@@ -38,9 +39,11 @@ const Player = () => {
 
   return (
     <div>
+      <NavBar/>
+      <div className = 'stats-container'>
+        <p className = 'title'>Last Game Stats</p>
         <table className = 'cell-blocks'> 
-            <p>Last Game Stats</p>
-            <tr>
+            <tr className = 'cell-headers'>
                 <td>Player</td>
                 <td>Minutes played</td>
                 <td>Fouls</td>
@@ -59,9 +62,11 @@ const Player = () => {
                 <td>{stats?.assists}</td>
                 <td>{stats?.steals}</td>
                 <td>{stats?.turnovers}</td>
+                <td>{stats?.blocks}</td>
                 <td>{stats?.totReb}</td>
             </tr>
         </table>
+      </div>
     </div>
   )
 }
