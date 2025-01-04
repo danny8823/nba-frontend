@@ -26,12 +26,10 @@
     text-align: center;
 }
 .player-title {
-    margin: 0;
+    margin: 10px;
     text-align: center;
-    background-color: aliceblue;
 }
 .players-container {
-    background-color: aliceblue;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +41,7 @@
     height: 160px;
     padding: 15px;
     margin: 5px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 .player-name > a {

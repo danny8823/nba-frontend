@@ -6,13 +6,11 @@
 .nba-card {
     width: 200px;
     height: 320px;
-    border: 0.5px solid black;
+    background-color: whitesmoke;
     margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 4px 3px 5px 1px rgba(0,0,0,0.75);
 }
 
 .nba-card > img {
