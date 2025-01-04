@@ -27,3 +27,19 @@
     font-size: 24px;
 }
 
+@media screen and (max-width: 900px) {
+    .cell-blocks {
+        width: 40%;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    .cell-headers td {
+        font-size: 8px;
+        
+    }
+
+    .cell-stats td {
+        font-size: 8px;
+    }
+}

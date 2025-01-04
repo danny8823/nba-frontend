@@ -54,7 +54,7 @@ const Player = () => {
                 <td>Blocks</td>
                 <td>Total rebound</td>
             </tr>
-            <tr>
+            <tr className='cell-stats'>
                 <td>{stats?.player?.firstname} {stats?.player?.lastname}</td>
                 <td>{stats?.min}</td>
                 <td>{stats?.pFouls}</td>
