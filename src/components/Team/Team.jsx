@@ -67,7 +67,7 @@ export const Team = () => {
             <div className = 'players-container'>{players.map((player) => (
                     <div key = {player.id} className = 'player-card'>
                         <p className = 'player-name'> 
-                            <Link to = {`/player/${player.id}`}><strong>Name:</strong> {player.firstname} {player.lastname}</Link>
+                            <Link to = {`/player/${player.id}`}>{player.firstname} {player.lastname}</Link>
                         </p>
                         <p className = 'player-height'>
                             {/* Height:{player.height.feets} FT {player.height.inches} */}

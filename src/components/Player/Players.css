@@ -14,15 +14,12 @@
 .title {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 32px;
 }
 
 .stats-container {
-    background-color: whitesmoke;
-    height: screen;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
+    margin-top: 60px;
 }
 
 .cell-headers td {
