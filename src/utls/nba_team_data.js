@@ -61,7 +61,7 @@ const data = [
         "nickname": "Nets",
         "code": "BKN",
         "city": "Brooklyn",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Brooklyn_Nets_primary_icon_logo_2024.svg/1200px-Brooklyn_Nets_primary_icon_logo_2024.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -145,7 +145,7 @@ const data = [
         "nickname": "Cavaliers",
         "code": "CLE",
         "city": "Cleveland",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cleveland_Cavaliers_logo.svg/1200px-Cleveland_Cavaliers_logo.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -257,7 +257,7 @@ const data = [
         "nickname": "Warriors",
         "code": "GSW",
         "city": "Golden State",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Warriors_de_Golden_State_logo.svg/1200px-Warriors_de_Golden_State_logo.svg.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/1200px-Golden_State_Warriors_logo.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {
@@ -593,7 +593,7 @@ const data = [
         "nickname": "Magic",
         "code": "ORL",
         "city": "Orlando",
-        "logo": "https://upload.wikimedia.org/wikipedia/fr/b/bd/Orlando_Magic_logo_2010.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/1200px-Orlando_Magic_logo.svg.png",
         "allStar": false,
         "nbaFranchise": true,
         "leagues": {

@@ -4,6 +4,8 @@ import { useParams,useLocation, Link } from 'react-router-dom'
 import teams from '../../utls/team_data'
 import './Team.css'
 import NavBar from '../Navbar/NavBar'
+import Card from '@mui/material/Card';
+import { CardContent } from '@mui/material'
 
 export const Team = () => {
     const [players, setPlayers] = useState([])
