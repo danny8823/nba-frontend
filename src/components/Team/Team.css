@@ -30,18 +30,26 @@
     text-align: center;
 }
 .players-container {
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
 .player-card {
-    width: 250px;
-    height: 160px;
+    width: 450px;
+    height: auto;
     padding: 15px;
-    margin: 5px;
-    background-color: whitesmoke;
+    margin:10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #87CEEB;
 }
 
 .player-name > a {

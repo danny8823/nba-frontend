@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './Players.css'
 import NavBar from '../Navbar/NavBar'
+import { Card } from '@mui/material'
 
 const Player = () => {
     const [stats, setStats] = useState()
@@ -35,7 +36,6 @@ const Player = () => {
 
         get_stats()
     },[playerId])
-
 
   return (
     <div>

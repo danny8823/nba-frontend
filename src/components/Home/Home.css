@@ -36,6 +36,10 @@
     font-family: "Sora", serif;
 }
 
+.card-content {
+    text-align: center;
+}
+
 .team_name {
     text-align: center;
 }

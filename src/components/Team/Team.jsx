@@ -67,35 +67,64 @@ export const Team = () => {
             </table>
             <h1 className= 'player-title'>Players</h1>
             <div className = 'players-container'>{players.map((player) => (
-                    <div key = {player.id} className = 'player-card'>
-                        <p className = 'player-name'> 
-                            <Link to = {`/player/${player.id}`}>{player.firstname} {player.lastname}</Link>
-                        </p>
-                        <p className = 'player-height'>
-                            {/* Height:{player.height.feets} FT {player.height.inches} */}
-                            {player.height?.feets && player.height?.inches ? (
-                                <p><strong>Height:</strong>  {player.height.feets} FT {player.height.inches} IN </p> ) : (
+                <Link to = {`/player/${player.id}`}>
+                    <Card key = {player.id} className='player-card' sx={{maxWidth: 600}}>
+                        <CardContent>
+                            <h1>{player.firstname} {player.lastname}</h1>
+                            <p className = 'player-height'>
+                                {player.height?.feets && player.height?.inches ? (
+                                    <p><strong>Height:</strong>  {player.height.feets} FT {player.height.inches} IN </p> ) : (
                                     <p><strong>Height:</strong> stats not avaliable</p>
-                            )}
-                        </p>
-                        {player.weight?.pounds ? (
-                         <p className = 'player-weight'>
-                            <strong>Weight:</strong> {player.weight.pounds} LBS
-                         </p>   ):(
-                            <p className = 'player-weight'>
-                            <strong>Weight:</strong> stats not avaliable
-                         </p>
-                        )}
+                                )}
+                            </p>
+                                {player.weight?.pounds ? (
+                                <p className = 'player-weight'>
+                                    <strong>Weight:</strong> {player.weight.pounds} LBS
+                                </p>   ):(
+                                    <p className = 'player-weight'>
+                                    <strong>Weight:</strong> stats not avaliable
+                                </p>
+                                )}
+                                {player.birth?.date && player.birth?.country ? (
+                            <p className = 'player-birthday'>
+                                <strong>Birth date:</strong> {player.birth.date} in {player.birth.country}
+                            </p> ) : (
+                            <p className='player-birthday'>
+                                <strong>Birth date:</strong>  stats not avaliable
+                            </p>
+                                )}
+                        </CardContent>
+                    </Card>
+                </Link>
+                    // <div key = {player.id} className = 'player-card'>
+                    //     <p className = 'player-name'> 
+                    //         <Link to = {`/player/${player.id}`}>{player.firstname} {player.lastname}</Link>
+                    //     </p>
+                        // <p className = 'player-height'>
+                        //     {/* Height:{player.height.feets} FT {player.height.inches} */}
+                        //     {player.height?.feets && player.height?.inches ? (
+                        //         <p><strong>Height:</strong>  {player.height.feets} FT {player.height.inches} IN </p> ) : (
+                        //             <p><strong>Height:</strong> stats not avaliable</p>
+                        //     )}
+                        // </p>
+                        // {player.weight?.pounds ? (
+                        //  <p className = 'player-weight'>
+                        //     <strong>Weight:</strong> {player.weight.pounds} LBS
+                        //  </p>   ):(
+                        //     <p className = 'player-weight'>
+                        //     <strong>Weight:</strong> stats not avaliable
+                        //  </p>
+                        // )}
                         
-                        {player.birth?.date && player.birth?.country ? (
-                        <p className = 'player-birthday'>
-                            <strong>Birth date:</strong> {player.birth.date} in {player.birth.country}
-                        </p> ) : (
-                        <p className='player-birthday'>
-                            <strong>Birth date:</strong>  stats not avaliable
-                        </p>
-                            )}
-                    </div>
+                        // {player.birth?.date && player.birth?.country ? (
+                        // <p className = 'player-birthday'>
+                        //     <strong>Birth date:</strong> {player.birth.date} in {player.birth.country}
+                        // </p> ) : (
+                        // <p className='player-birthday'>
+                        //     <strong>Birth date:</strong>  stats not avaliable
+                        // </p>
+                        //     )}
+                    // </div>
                 ))}
             </div>
         </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBar from '../Navbar/NavBar'
 import './Home.css'
 import data from '../../utls/nba_team_data'
@@ -20,19 +19,13 @@ const Home = () => {
                   image={team.logo}
                   alt='team logo'
                   ></CardMedia>
-                <CardContent>
+                <CardContent className = 'card-content'>
                     <h2>{team.name}</h2>
                     <p>{team.leagues?.standard?.conference} Conference</p>
                     <p>{team.leagues?.standard?.division} Division</p> 
                 </CardContent>
               </Card>
               </Link>
-            //   <div key = {team.id} className='nba-card'>
-            //  <h4 className = 'team_name'><Link to = {`/team/${team.id}`}state={{team: team}}>{team.name} </Link></h4>
-            //   <img src = {team.logo} alt = 'team logo'/>
-            //   <p className = 'conference'><strong>Conference</strong> - {team.leagues?.standard?.conference}</p>
-            //   <p className='division'><strong>Division</strong> - {team.leagues?.standard?.division}</p>
-            // </div> 
           ))}
         </div>
       </div>
